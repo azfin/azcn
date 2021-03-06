@@ -319,9 +319,9 @@ body {
 .icon-link {
   z-index: 100;
   position: absolute;
-  left: 5px;
-  bottom: 5px;
-  width: 32px;
+  left: 10px;
+  top: 10px;
+  width: 200px;
 }
 .icon-link img {
   width: 100%;

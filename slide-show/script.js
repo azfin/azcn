@@ -1,4 +1,5 @@
 class CitiesSlider extends React.Component {
+  //https://codepen.io/thanglamhuu/pen/rNWZWWx
   constructor(props) {
     super(props);
 
@@ -42,19 +43,14 @@ class CitiesSlider extends React.Component {
     const { activeSlide, prevSlide, sliderReady } = this.state;
     return /*#__PURE__*/(
       React.createElement("div", { className: classNames('slider', { 's--ready': sliderReady }) }, /*#__PURE__*/
-      React.createElement("p", { className: "slider__top-heading" }, "Travelers"), /*#__PURE__*/
       React.createElement("div", { className: "slider__slides" },
       this.props.slides.map((slide, index) => /*#__PURE__*/
-      React.createElement("div", {
+      React.createElement("a", {
         className: classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index }),
-        key: slide.city }, /*#__PURE__*/
+        key: slide.city, href: slide.link }, /*#__PURE__*/
 
       React.createElement("div", { className: "slider__slide-content" }, /*#__PURE__*/
-      React.createElement("h3", { className: "slider__slide-subheading" }, slide.country || slide.city), /*#__PURE__*/
-      React.createElement("h2", { className: "slider__slide-heading" },
-      slide.city.split('').map(l => /*#__PURE__*/React.createElement("span", null, l))), /*#__PURE__*/
-
-      React.createElement("p", { className: "slider__slide-readmore" }, "read more")), /*#__PURE__*/
+      React.createElement("h3", { className: "slider__slide-subheading" })), /*#__PURE__*/
 
       React.createElement("div", { className: "slider__slide-parts" },
       [...Array(this.IMAGE_PARTS).fill()].map((x, i) => /*#__PURE__*/
@@ -75,29 +71,19 @@ class CitiesSlider extends React.Component {
 
 const slides = [
 {
-  city: 'Paris',
-  country: 'France',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg' },
-
+  city: 'Khóa học',
+  link: 'https://azfin.vn/khoa-hoc-dinh-gia-co-phieu-cao-cap',
+  country: 'KHÓA HỌC PHÂN TÍCH & ĐỊNH GIÁ CỔ PHIẾU CAO CẤP',
+  img: 'https://cdn.azfin.vn/DaoTaoHoiThao/AzFin-phan-tich-dau-tu-co-phieu-cao-cap.jpg' },
 {
-  city: 'Singapore',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg' },
-
+  city: 'Khóa học:',
+  country: 'ĐỌC VỊ CỔ PHIẾU CHUYÊN SÂU',
+  link: 'https://azfin.vn/khoa-hoc-doc-vi-co-phieu-chuyen-sau',
+  img: 'https://hachium.storage.googleapis.com/users/10787c45caa3e6c134a49a0f8cb6b364/1607966792200.jpg' },
 {
-  city: 'Prague',
-  country: 'Czech Republic',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg' },
-
-{
-  city: 'Amsterdam',
-  country: 'Netherlands',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg' },
-
-{
-  city: 'Moscow',
-  country: 'Russia',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg' }];
-
+  city: 'Kênh YOUTUBE',
+  link: 'https://www.youtube.com/channel/UCnH3mGTw4w7rjOYIfGAVV7Q',
+  img: 'https://cdn.azfin.vn/img/Link-Youtube-thumnail.jpg' }];
 
 
 ReactDOM.render( /*#__PURE__*/React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
