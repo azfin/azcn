@@ -74,16 +74,20 @@ const slides = [
   city: 'Khóa học',
   link: 'https://azfin.vn/khoa-hoc-dinh-gia-co-phieu-cao-cap',
   country: 'KHÓA HỌC PHÂN TÍCH & ĐỊNH GIÁ CỔ PHIẾU CAO CẤP',
-  img: 'https://cdn.azfin.vn/DaoTaoHoiThao/AzFin-phan-tich-dau-tu-co-phieu-cao-cap.jpg' },
+  img: 'https://cdn.azfin.vn/slide-show/doc-vi-doanh-nghiep.jpg' },
 {
   city: 'Khóa học:',
   country: 'ĐỌC VỊ CỔ PHIẾU CHUYÊN SÂU',
   link: 'https://azfin.vn/khoa-hoc-doc-vi-co-phieu-chuyen-sau',
   img: 'https://hachium.storage.googleapis.com/users/10787c45caa3e6c134a49a0f8cb6b364/1607966792200.jpg' },
 {
-  city: 'Kênh YOUTUBE',
-  link: 'https://www.youtube.com/channel/UCnH3mGTw4w7rjOYIfGAVV7Q',
-  img: 'https://cdn.azfin.vn/img/Link-Youtube-thumnail.jpg' }];
+  city: 'Khóa học 5 Cổ phiếu Ngân Hàng Hấp Dẫn Nhất',
+  link: 'https://academy.azfin.vn/khoa-hoc/5-co-phieu-ngan-hang-hap-dan-nhat',
+  img: 'https://cdn.azfin.vn/slide-show/khoa-hoc-5-co-phieu-ngan-hang.jpg' },
+{
+  city: 'Tích Sản Cổ Phiếu - Tự Do Tài Chính',
+  link: 'https://azfin.vn/posts/vn/gioi-thieu-chuong-trinh-tich-san-co-phieu-tu-do-tai-chinh',
+  img: 'https://cdn.azfin.vn/slide-show/tich-san-co-phieu.jpg' }];
 
 
 ReactDOM.render( /*#__PURE__*/React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
