@@ -74,7 +74,7 @@ const slides = [
   city: 'Khóa học',
   link: 'https://academy.azfin.vn/khoa-hoc/2104-chien-luoc-dung-tren-vai-nguoi-khong-lo-bi-kip-danh-bai-thi-truong',
   country: 'CHIẾN LƯỢC ĐỨNG TRÊN VAI NGƯỜI KHỔNG LỒ',
-  img: 'khoa-hoc-chung-khoan-dung-tren-vai-nguoi-khong-lo-sm.jpg' },
+  img: 'https://cdn.azfin.vn/slide-show/khoa-hoc-chung-khoan-dung-tren-vai-nguoi-khong-lo-sm.jpg' },
 {
   city: 'Khóa học',
   link: 'https://academy.azfin.vn/khoa-hoc/9-bi-quyet-doc-vi-bao-cao-tai-chinh-cua-doanh-nghiep',
@@ -85,10 +85,6 @@ const slides = [
   country: 'ĐỌC VỊ CỔ PHIẾU CHUYÊN SÂU',
   link: 'https://azfin.vn/khoa-hoc-doc-vi-co-phieu-chuyen-sau',
   img: 'https://hachium.storage.googleapis.com/users/10787c45caa3e6c134a49a0f8cb6b364/1607966792200.jpg' },
-{
-  city: 'Khóa học 5 Cổ phiếu Ngân Hàng Hấp Dẫn Nhất',
-  link: 'https://academy.azfin.vn/khoa-hoc/5-co-phieu-ngan-hang-hap-dan-nhat',
-  img: 'https://cdn.azfin.vn/slide-show/khoa-hoc-5-co-phieu-ngan-hang.jpg' },
 {
   city: 'Tích Sản Cổ Phiếu - Tự Do Tài Chính',
   link: 'https://azfin.vn/posts/vn/gioi-thieu-chuong-trinh-tich-san-co-phieu-tu-do-tai-chinh',
