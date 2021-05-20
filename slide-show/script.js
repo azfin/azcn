@@ -47,7 +47,7 @@ class CitiesSlider extends React.Component {
       this.props.slides.map((slide, index) => /*#__PURE__*/
       React.createElement("a", {
         className: classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index }),
-        key: slide.city, href: slide.link }, /*#__PURE__*/
+        key: slide.city, href: slide.link, target: 'blank' }, /*#__PURE__*/
 
       React.createElement("div", { className: "slider__slide-content" }, /*#__PURE__*/
       React.createElement("h3", { className: "slider__slide-subheading" })), /*#__PURE__*/
@@ -72,8 +72,13 @@ class CitiesSlider extends React.Component {
 const slides = [
 {
   city: 'Khóa học',
-  link: 'https://azfin.vn/khoa-hoc-dinh-gia-co-phieu-cao-cap',
-  country: 'KHÓA HỌC PHÂN TÍCH & ĐỊNH GIÁ CỔ PHIẾU CAO CẤP',
+  link: 'https://academy.azfin.vn/khoa-hoc/2104-chien-luoc-dung-tren-vai-nguoi-khong-lo-bi-kip-danh-bai-thi-truong',
+  country: 'CHIẾN LƯỢC ĐỨNG TRÊN VAI NGƯỜI KHỔNG LỒ',
+  img: 'khoa-hoc-chung-khoan-dung-tren-vai-nguoi-khong-lo-sm.jpg' },
+{
+  city: 'Khóa học',
+  link: 'https://academy.azfin.vn/khoa-hoc/9-bi-quyet-doc-vi-bao-cao-tai-chinh-cua-doanh-nghiep',
+  country: 'KHÓA HỌC 09 BÍ QUYẾT ĐỌC VỊ DOANH NGHIỆP',
   img: 'https://cdn.azfin.vn/slide-show/doc-vi-doanh-nghiep.jpg' },
 {
   city: 'Khóa học:',
