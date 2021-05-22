@@ -85,6 +85,11 @@ const slides = [
   country: 'ĐỌC VỊ CỔ PHIẾU CHUYÊN SÂU',
   link: 'https://academy.azfin.vn/khoa-hoc/doc-vi-co-phieu-chuyen-sau',
   img: 'https://hachium.storage.googleapis.com/users/10787c45caa3e6c134a49a0f8cb6b364/1614182164054.jpg' },
+  {
+  city: 'Khóa học:',
+  country: 'ĐỊNH GIÁ CỔ PHIẾU CAO CẤP',
+  link: 'https://academy.azfin.vn/khoa-hoc/phan-tich-va-dinh-gia-co-phieu-cao-cap',
+  img: 'https://hachium.storage.googleapis.com/users/10787c45caa3e6c134a49a0f8cb6b364/1617072496569.jpg' },
 {
   city: 'Tích Sản Cổ Phiếu - Tự Do Tài Chính',
   link: 'https://azfin.vn/posts/vn/gioi-thieu-chuong-trinh-tich-san-co-phieu-tu-do-tai-chinh',
